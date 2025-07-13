@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bio upfnjh</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+    body {
+      margin: 0;
+      background: #121212;
+      color: #eee;
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      user-select: none;
+    }
+    .nickname {
+      font-size: 5rem;
+      letter-spacing: 0.15em;
+      color: #ff3c78;
+      text-shadow:
+        0 0 10px #ff3c78,
+        0 0 20px #ff3c78;
+      margin: 0;
+    }
+    .description {
+      font-size: 1.4rem;
+      color: #aaa;
+      margin: 8px 0 30px 0;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+    }
+    .social-links {
+      display: flex;
+      gap: 25px;
+      justify-content: center;
+    }
+    .social-links a {
+      text-decoration: none;
+      color: #eee;
+      font-weight: 700;
+      font-size: 1.1rem;
+      padding: 12px 20px;
+      border-radius: 30px;
+      background: #222;
+      box-shadow: 0 0 5px #000 inset;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .social-links a::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      background: rgba(255, 60, 120, 0.5);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      transition: width 0.4s ease, height 0.4s ease;
+      z-index: 0;
+    }
+    .social-links a:hover::before {
+      width: 120%;
+      height: 300%;
+    }
+    .social-links a:hover {
+      color: #ff3c78;
+      box-shadow:
+        0 0 8px #ff3c78,
+        0 0 20px #ff3c78;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="center-block">
+    <h1 class="nickname">upfnjh</h1>
+    <p class="description">Just me, no fancy titles</p>
+    <div class="social-links">
+      <a href="https://discord.gg/yourdiscord" target="_blank" rel="noopener noreferrer">Discord</a>
+      <a href="https://instagram.com/yourinstagram" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://tiktok.com/@yourtiktok" target="_blank" rel="noopener noreferrer">TikTok</a>
+      <a href="https://t.me/yourtelegram" target="_blank" rel="noopener noreferrer">Telegram</a>
+    </div>
+  </div>
+</body>
+</html>
