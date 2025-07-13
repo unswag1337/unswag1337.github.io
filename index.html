@@ -23,9 +23,7 @@
       font-size: 5rem;
       letter-spacing: 0.15em;
       color: #ff3c78;
-      text-shadow:
-        0 0 10px #ff3c78,
-        0 0 20px #ff3c78;
+      text-shadow: 0 0 10px #ff3c78, 0 0 20px #ff3c78;
       margin: 0;
     }
     .description {
@@ -35,10 +33,23 @@
       font-weight: 500;
       letter-spacing: 0.05em;
     }
+    .bio {
+      margin-bottom: 30px;
+    }
+    .bio-item {
+      margin: 5px 0;
+      font-size: 1.1rem;
+      color: #8B0000;
+      text-shadow: 0 0 2px #000;
+    }
+    .label {
+      color: #aaa;
+    }
     .social-links {
       display: flex;
       gap: 25px;
       justify-content: center;
+      flex-wrap: wrap;
     }
     .social-links a {
       text-decoration: none;
@@ -73,9 +84,7 @@
     }
     .social-links a:hover {
       color: #ff3c78;
-      box-shadow:
-        0 0 8px #ff3c78,
-        0 0 20px #ff3c78;
+      box-shadow: 0 0 8px #ff3c78, 0 0 20px #ff3c78;
       z-index: 1;
     }
   </style>
@@ -84,11 +93,21 @@
   <div class="center-block">
     <h1 class="nickname">upfnjh</h1>
     <p class="description">Just me, no fancy titles</p>
+
+    <div class="bio">
+      <div class="bio-item"><span class="label">Name:</span> Daniel</div>
+      <div class="bio-item"><span class="label">Age:</span> 15</div>
+      <div class="bio-item"><span class="label">Nationality:</span> Ukrainian</div>
+      <div class="bio-item"><span class="label">Phone:</span> +48 ???</div>
+      <div class="bio-item"><span class="label">Hobbies:</span> coding, gym, playing games</div>
+      <div class="bio-item"><span class="label">Location:</span> Ukraine / Poland (Bielsko-Biała)</div>
+    </div>
+
     <div class="social-links">
-      <a href="https://discord.gg/yourdiscord" target="_blank" rel="noopener noreferrer">Discord</a>
-      <a href="https://instagram.com/yourinstagram" target="_blank" rel="noopener noreferrer">Instagram</a>
-      <a href="https://tiktok.com/@yourtiktok" target="_blank" rel="noopener noreferrer">TikTok</a>
-      <a href="https://t.me/yourtelegram" target="_blank" rel="noopener noreferrer">Telegram</a>
+      <a href="https://discord.com/users/ufp8" target="_blank">Discord</a>
+      <a href="https://instagram.com/wannadamage" target="_blank">Instagram</a>
+      <a href="https://tiktok.com/@undersweg" target="_blank">TikTok</a>
+      <a href="https://t.me/ufpnjashu" target="_blank">Telegram</a>
     </div>
   </div>
 </body>
